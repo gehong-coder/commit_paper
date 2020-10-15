@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% block t1 %}
+{% endblock %}
+{% block name %}
+    <h1 style="margin-left: 500px;color: #0f0f0f;margin-top: 20px"> 作者详情 </h1>
+{% endblock %}
+{% block con %}
+    <style>
+        .btn-success {
+            margin-top: 10px;
+        }
+
+        .container {
+            margin-top: 15px;
+            margin-left: 1px;
+        }
+    </style>
+    <script>
+
+    </script>
+    <div class="container" style="margin-left: -190px">
+        <div class="row">
+            <div class="col-md-5 col-md-offset-3">
+                <form action="" method="post">
+                    {% csrf_token %}
+                     <div style="margin-top: 10px">
+                        <label>请选择作者:</label>
+                         <select name="author" id="" style="margin-left: 15px;width: 200px"  >
+                            {% for p in aut %}
+                                <option value="{{ p.nid }}">{{ p.name }}</option>
+                            {% endfor %}
+                        </select>
+                     <div>
+                    <input type="submit" class="bth btn-success" style="margin-top: 10px">
+                     </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+{% endblock %}

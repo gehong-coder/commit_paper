@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% block t1 %}
+{% endblock %}
+{% block name %}
+    <h1 style="margin-left: 500px;color: #0f0f0f;margin-top: 20px"> 查询书籍 </h1>
+{% endblock %}
+{% block con %}
+    <style>
+        .btn-success {
+            margin-top: 10px;
+        }
+
+        .container {
+            margin-top: 15px;
+            margin-left: 1px;
+        }
+    </style>
+    <script>
+
+    </script>
+    <div class="container" style="margin-left: -190px">
+        <div class="row">
+            <div class="col-md-5 col-md-offset-3" style="margin-top: 20px">
+                <label>按书名查找-请输入书名：</label>
+                <form method="post">
+                    {% csrf_token %}
+                    <input type="text" class="form-control" name="findname">
+                    <input type="submit" class="bth btn-success" style="margin-top: 10px">
+                </form>
+                <label style="margin-top: 30px">按作者查找-请输入作者名：</label>
+                <form method="post">
+                    {% csrf_token %}
+                    <input type="text" class="form-control" name="authorname">
+                    <input type="submit" class="bth btn-success" style="margin-top: 10px">
+                </form>
+                <label style="margin-top: 30px">按出版社查找-请输入出版社：</label>
+                <form method="post">
+                    {% csrf_token %}
+                    <div style="margin-top: 10px">
+                        <select name="pub" id="" style="width: 290px;height: 30px">
+                            {% for p in pub %}
+                                <option value="{{ p.nid }}">{{ p.name }}</option>
+                            {% endfor %}
+                        </select>
+                        <div><input type="submit" class="bth btn-success" style="margin-top: 10px"></div>
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+{% endblock %}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>开始使用layui</title>
+  <link rel="stylesheet" href="../app/static/layui/css/layui.css">
+</head>
+<body>
+
+
+
+<i class="layui-icon">&#xe683;;</i>
+<i class="layui-icon layui-icon-face-smile"></i>
+<div class="layui-anim layui-anim-rotate layui-anim-loop" style="width: 100px;height: 80px;background-color: green;border-bottom-left-radius: 60%"></div>
+
+<button type="button" class="layui-btn">一个标准的按钮</button>
+<a href="http://www.layui.com" class="layui-btn">一个可跳转的按钮</a>
+<button type="button" class="layui-btn">
+  <i class="layui-icon">&#xe608;</i> 添加
+</button>
+<div class="layui-btn-group">
+  <button type="button" class="layui-btn"><i class="layui-icon">&#xe608;</i> 增加</button>
+  <button type="button" class="layui-btn"><i class="layui-icon">&#xe608;</i> 添加编辑</button>
+  <button type="button" class="layui-btn">删除</button>
+</div>
+<!-- 你的HTML代码 -->
+<p class="layui-bg-blue">你就  </p>
+
+    <div class="layui-container">
+      常规布局（以中型屏幕桌面为例）：
+      <div class="layui-row">
+        <div class="layui-col-md9">
+          你的内容 9/12
+        </div>
+        <div class="layui-col-md3">
+          你的内容 3/12
+        </div>
+      </div>
+
+
+        <input type="text" class="layui-input" id="test2">
+        <input type="text" class="layui-input" id="test1">
+
+
+<script src="../app/static/layui/layui.js"></script>
+<script>
+//一般直接写在一个js文件中
+    layui.use(['layer', 'form'], function(){
+  var layer = layui.layer
+  ,form = layui.form;
+
+  layer.msg('Hello World');
+
+  layui.use('laydate', function(){
+  var laydate = layui.laydate;
+
+  //执行一个laydate实例
+  laydate.render({
+        elem: '#test1', //指定元素
+        type:'year',
+        range:'true',
+        format:'yyyy年MM月dd日',
+        calendar:'true'
+  });
+    laydate.render({
+        elem: '#test2', //指定元素
+        type:'year'
+  });
+});
+});
+
+</script>
+</body>
+</html>

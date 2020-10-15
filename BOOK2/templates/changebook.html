@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% block name %}
+    <h1 style="margin-left: 500px;color: #0f0f0f;margin-top: 20px" > 编辑书籍 </h1>
+{% endblock %}
+{% block con %}
+<style>
+.btn-success{
+    margin-top: 10px;
+}
+.container{
+    margin-top: 15px;
+    margin-left: 1px;
+}
+</style>
+    <div class="container" style="margin-left: -190px">
+    <div class="row">
+        <div class="col-md-5 col-md-offset-3">
+            <form action="" method="post">
+                {% csrf_token %}
+                <div>
+                    <label for="">书籍名称</label>
+                    <input type="text" class="form-control" name="title" value="{{ book.title }}">
+                </div>
+                <div>
+                    <label for="">价格</label>
+                    <input type="text" class="form-control" name="price" value="{{ book.price }}">
+                </div>
+                <div>
+                    <label for="">出版日期</label>
+                    <input type="date" class="form-control" name="date" value="{{ book.publishDate|date:'Y-m-d' }}">
+                </div>
+                <div style="margin-top: 10px">
+                    <label>作 者</label>
+                    <select name="author" id="" style="width: 200px;margin-left: 20px;margin-top: 10px" >
+                        {% for p in aut %}
+                            <option value="{{ p.nid }}">{{ p.name }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div style="margin-top: 10px">
+                    <label>出版社</label>
+                    <select name="pub" id="" style="width: 200px;margin-left: 15px;">
+                        {% for p in pub %}
+                            <option value="{{ p.nid }}">{{ p.name }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <input type="submit" class="bth btn-success">
+            </form>
+        </div>
+    </div>
+
+</div>
+{% endblock %}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>饼图</title>
+    <div><a href="/salefood/" class="btn btn-info" style="margin-top: 10px">餐馆销量</a></div>
+    <script src="/static/bs/css/echarts.min.js"></script>
+</head>
+<body>
+<!--为echarts准备一个容器，画图就画在里面-->
+<div id="box" style="width: 600px;height: 600px; margin-left: 280px"></div>
+<script>
+    //初始化ehcharts实例
+    var myChart=echarts.init(document.getElementById("box"));
+    //指定图表的配置项和数据
+    var option={
+        //标题
+        title:{
+            show:true,
+            x:'center',
+            text:'餐厅销量统计统计',//主标题
+        },
+        //工具栏组件
+        toolbox:{
+            show:true, //是否显示
+            feature:{ //要显示的具体功能
+                dataView:{  //数据视图
+                  show:true
+                },
+                saveAsImage:{ //保存图片
+                    show:true
+                }
+            }
+        },
+        //弹窗组件
+        tooltip:{
+            show:true,//默认为true
+            formatter:"{a} <br/> {b} :{c} ({d}%)"
+        },
+        //图例-每一条数据的名字叫销量
+        legend:{
+            orient:'vertical',
+            left:'left',
+        },
+        //数据-data是最终要显示的数据
+        series:[{
+            name:'销量',//图例名称
+            type:'pie',
+            hoverAnimation:false,//是否播放放大动画，默认为true
+            selectedMode:true,//是否支持多选，默认为false
+            radius:'75%',//半径
+            center:['50%','60%'],//圆心坐标
+            data:{{ D|safe }}
+        }]
+    };
+    //使用刚刚指定的配置项和数据项显示图表
+    myChart.setOption(option);
+</script>
+</body>
+</html>

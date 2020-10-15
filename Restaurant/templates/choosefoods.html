@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block name %}
+    <h1 style="margin-left: 500px;color: #0f0f0f"> 所有菜品 </h1>
+{% endblock %}
+{% block con %}
+    <style>
+        .btn-success {
+            margin-top: 10px;
+        }
+
+        .container {
+            margin-top: 15px;
+            margin-left: 1px;
+        }
+    </style>
+    <div class="container" style="margin-left: -200px">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-3">
+            <h1><div>请选择菜品，进行单独显示销量</div></h1>
+                <table class="table table-striped table-bordered">
+                    <thead>
+                    <tr>
+                        <td style="background-color: #c7ddef">菜品名称</td>
+                        <td style="background-color: #c7ddef">资料展示</td>
+
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for foodname in b %}
+                        <tr>
+                            <td >{{ foodname.title }}</td>
+                            <td><a href=" sigaldata/foods/{{ foodname.format|safe }}/show " class="btn btn-danger">选择显示</a></td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+
+    </div>
+{% endblock %}

@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% block name %}
+    <h1 style="margin-left: 500px;color: #0f0f0f;margin-top: 20px" > 编辑菜品 </h1>
+{% endblock %}
+{% block con %}
+<style>
+.btn-success{
+    margin-top: 10px;
+}
+.container{
+    margin-top: 15px;
+    margin-left: 1px;
+}
+</style>
+    <div class="container" style="margin-left: -190px">
+    <div class="row">
+        <div class="col-md-5 col-md-offset-3">
+            <form action="" method="post">
+                {% csrf_token %}
+                <div>
+                    <label for="">菜品名称</label>
+                    <input type="text" class="form-control" name="name" value="{{ food.name }}">
+                </div>
+                <div>
+                    <label for="">价 格</label>
+                    <input type="text" class="form-control" name="price" value="{{ food.price }}">
+                </div>
+                <div>
+                    <label for="">售卖日期</label>
+                    <input type="date" class="form-control" name="date" value="{{ food.designDate|date:'Y-m-d' }}">
+                </div>
+                <div style="margin-top: 10px">
+                    <label>厨 师</label>
+                    <select name="cooker" id="" style="width: 200px;margin-left: 20px;margin-top: 10px" >
+                        {% for p in cookers %}
+                            <option value="{{ p.nid }}">{{ p.name }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div style="margin-top: 10px">
+                    <label>售卖餐馆</label>
+                    <select name="canteen" id="" style="width: 200px;margin-left: 15px;">
+                        {% for p in canteen %}
+                            <option value="{{ p.nid }}">{{ p.name }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <input type="submit" class="bth btn-success">
+            </form>
+        </div>
+    </div>
+
+</div>
+{% endblock %}

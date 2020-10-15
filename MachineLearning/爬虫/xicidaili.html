@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="土豆IP是国内知名的代理ip服务商,拥有全国千万级ip库存,土豆IP代理软件一键自动切换动态ip,高效实用,支持PC、安卓、苹果等各类系统,是企业级用户首选。" />
+    <title>土豆IP-高品质动态ip代理服务器_一键切换高效实用【官方网站】</title>
+    
+<link rel="stylesheet" href="/user/css/style.css?v=20200804001" />
+<link type="image/x-icon" rel="icon" href="/user/img/common/favicon.ico?v=20200416001" />
+
+</head>
+<body class="root-index">
+    
+<div class="header">
+    <div class="header-con clearfix">
+        <a href="/" class="fl img-logo-wrap"><img src="/user/img/header/logo-1.png?v=20200410001" alt="土豆ip logo" class="img-logo img-logo-1" /><img src="/user/img/header/logo-2.png?v=20200410001" alt="土豆ip logo" class="img-logo img-logo-2" /><img src="/user/img/header/logo-3.png?v=20200410001" alt="土豆ip logo" class="img-logo img-logo-3" /></a>
+        <ul class="fl nav-list">
+            <li class="list-item">
+                <a href="/" class="link" title="首页">首页</a>
+                <span class="line"></span>
+            </li>
+            <li class="list-item">
+                <a href="/buy" class="link" title="套餐购买">套餐购买</a>
+                <span class="line"></span>
+                <img src="/user/img/header/tooltip_discount.png?v=20200727001" alt="" class="img-tooltip">
+            </li>
+            <li class="list-item">
+                <a href="/download" class="link" title="软件下载">软件下载</a>
+                <span class="line"></span>
+            </li>
+            <li class="list-item">
+                <a href="/help" class="link" title="使用帮助">使用帮助</a>
+                <span class="line"></span>
+            </li>
+            <li class="list-item">
+                <a href="/about" class="link" title="关于我们">关于我们</a>
+                <span class="line"></span>
+            </li>
+        </ul>
+        
+        
+        <div class="login-before fr">
+            <a href="javascript:;" title="登录" class="fl btn btn-login" id="js-pop-login-panel">登录</a>
+            <a href="javascript:;" title="注册" class="fl btn btn-register js-pop-register-panel"><span class="cover mask-layer"></span><span class="txt">注册</span></a>
+            <img src="/user/img/header/tooltip_tray.png?v=20200727001" alt="" class="img-tooltip" />
+        </div>
+        
+    </div>
+</div>
+
+    <div class="main-index">
+        <div class="bg-area" id="js-bg-area">
+            <div class="bg-wrap cover">
+                <canvas id="js-canvas"></canvas>
+            </div>
+            <div class="bg-content">
+                <div class="bg-title-area">
+                    <div class="animated bg-title-big">
+                        <span class="inline text">IP</span>
+                        <span class="inline text">地</span>
+                        <span class="inline text">址</span>
+                        <span class="inline text">修</span>
+                        <span class="inline text">改</span>
+                        <span class="inline text">软</span>
+                        <span class="inline text">件</span>
+                        <span class="inline text">&nbsp;</span>
+                        <span class="inline text">用</span>
+                        <span class="inline text">土</span>
+                        <span class="inline text">豆</span>
+                        <span class="inline text">IP</span>
+                    </div>
+                    <div class="animated bg-title-small">
+                        <span class="inline text">任</span>
+                        <span class="inline text">意</span>
+                        <span class="inline text">城</span>
+                        <span class="inline text">市</span>
+                        <span class="inline text">可</span>
+                        <span class="inline text">选</span>
+                        <span class="inline text">&nbsp;</span>
+                        <span class="inline text">隐</span>
+                        <span class="inline text">藏</span>
+                        <span class="inline text">本</span>
+                        <span class="inline text">地</span>
+                        <span class="inline text">IP</span>
+                    </div>
+                </div>
+                <a href="javascript:;" class="free-tray js-pop-register-panel" title="新用户免费试用">
+                    <img src="/user/img/index/free_label.png?v=20200723001" alt="" class="img-free-label">
+                    <span class="glow"></span>
+                </a>
+                <div class="download-area clearfix">
+                    <a href="/act/download?fname=tudou.zip" class="inline download-file download-windows js-download-file" title="Windows版下载">
+                        <span class="border border-top"></span>
+                        <span class="border border-right"></span>
+                        <span class="border border-bottom"></span>
+                        <span class="border border-left"></span>
+                        <div class="layer"></div>
+                        <div class="pr">
+                            <img src="/user/img/index/icon_windows.png?v=20200723001" alt="" class="vm img-icon" />
+                            <span class="inline vm text">Windows版</span>
+                        </div>
+                    </a>
+                    <a href="/act/download?fname=tudou.apk" class="inline download-file download-app js-download-file" title="Android版下载">
+                        <span class="border border-top"></span>
+                        <span class="border border-right"></span>
+                        <span class="border border-bottom"></span>
+                        <span class="border border-left"></span>
+                        <div class="layer"></div>
+                        <div class="pr">
+                            <img src="/user/img/index/icon_android.png?v=20200723001" alt="" class="vm img-icon" />
+                            <span class="inline vm text">Android版</span>
+                        </div>
+                        <div class="download-qrcode-wrap js-download-qrcode-wrap hide">
+                            <img src="/user/img/common/download_apk.png?v=20200410002" alt="" class="img-qrcode" />
+                            <span class="triangle">&#9670;</span>
+                        </div>
+                    </a>
+                </div>
+                <ul class="explain-list clearfix">
+                    <li class="list-item">
+                        <div class="cover layer"></div>
+                        <div class="border border-top"></div>
+                        <div class="inline item-con">
+                            <img src="/user/img/index/icon_1.png?v=20200728001" alt="" class="img-item-icon" />
+                            <div class="item-desc">
+                                <p>IP纯净，高匿稳定，延迟低</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-item">
+                        <div class="cover layer"></div>
+                        <div class="border border-top"></div>
+                        <div class="inline item-con">
+                            <img src="/user/img/index/icon_2.png?v=20200728001" alt="" class="img-item-icon" />
+                            <div class="item-desc">
+                                <p>操作简单易用，自动更换IP无需</p>
+                                <p>值守</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-item">
+                        <div class="cover layer"></div>
+                        <div class="border border-top"></div>
+                        <div class="inline item-con">
+                            <img src="/user/img/index/icon_3.png?v=20200728001" alt="" class="img-item-icon" />
+                            <div class="item-desc">
+                                <p>全国200+地区服务器可选，独</p>
+                                <p>享4-10Mbps带宽</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-item">
+                        <div class="cover layer"></div>
+                        <div class="border border-top"></div>
+                        <div class="inline item-con">
+                            <img src="/user/img/index/icon_4.png?v=20200728001" alt="" class="img-item-icon" />
+                            <div class="item-desc">
+                                <p>服务有保障，专业客服团队快速</p>
+                                <p>解决IP售后问题</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="advantage-area-1">
+            <div class="bg-ripple-1" id="js-bg-ripple-1"></div>
+            <div class="advantage-content">
+                <div class="advantage-big-title">免费试用 功能齐全</div>
+                <div class="advantage-small-title">土豆IP只提供绿色纯净IP，100%无限制IP池，支持自动清理cookie，一键切换动态IP</div>
+                <a href="javascript:;" class="btn-free-experience js-pop-register-panel">
+                    <span class="vm vh text">立即免费体验</span>
+                    <span class="cover text">立即免费体验</span>
+                </a>
+                <div class="img-pc-wrap" id="js-img-pc-wrap">
+                    <img src="/user/img/index/pc.png?v=20200802001" alt="" class="img-pc" />
+                    <div class="desc-item desc-item-1 js-desc-item">
+                        <div class="hot-dot"></div>
+                        <div class="vertical-line"></div>
+                        <div class="horizontal-line"></div>
+                        <div class="dot"></div>
+                        <div class="desc-info">
+                            <div class="desc-title">一键换IP</div>
+                            <div class="desc-text">无需任何设置，一键更换IP</div>
+                        </div>
+                    </div>
+                    <div class="desc-item desc-item-2 js-desc-item">
+                        <div class="hot-dot"></div>
+                        <div class="horizontal-line"></div>
+                        <div class="dot"></div>
+                        <div class="desc-info">
+                            <div class="desc-title">城市路线</div>
+                            <div class="desc-text">全国200+城市线路随意选择</div>
+                        </div>
+                    </div>
+                    <div class="desc-item desc-item-3 js-desc-item">
+                        <div class="hot-dot"></div>
+                        <div class="horizontal-line horizontal-line-1"></div>
+                        <div class="vertical-line"></div>
+                        <div class="horizontal-line horizontal-line-2"></div>
+                        <div class="dot"></div>
+                        <div class="desc-info">
+                            <div class="desc-title">定时切换</div>
+                            <div class="desc-text">
+                                <p>无需人员值守，定时设置更</p>
+                                <p>便捷</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desc-item desc-item-4 js-desc-item">
+                        <div class="hot-dot"></div>
+                        <div class="horizontal-line"></div>
+                        <div class="dot"></div>
+                        <div class="desc-info">
+                            <div class="desc-title">清除浏览器缓存</div>
+                            <div class="desc-text">
+                                <p>访问页面过后支持自动清理</p>
+                                <p>cookie</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desc-item desc-item-5 js-desc-item">
+                        <div class="hot-dot"></div>
+                        <div class="horizontal-line horizontal-line-1"></div>
+                        <div class="vertical-line"></div>
+                        <div class="horizontal-line horizontal-line-2"></div>
+                        <div class="dot"></div>
+                        <div class="desc-info">
+                            <div class="desc-title">运行指定程序</div>
+                            <div class="desc-text">
+                                <p>添加程序路径，更换IP即可</p>
+                                <p>自动运行</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="advantage-area-2 clearfix" id="js-advantage-area-2">
+            <div class="img-product-wrap">
+                <img src="/user/img/index/product.jpg?v=20200803001" alt="" class="img-product" />
+            </div>
+            <div class="advantage-content">
+                <div class="advantage-big-title">产品优势</div>
+                <ul class="advantage-list clearfix">
+                    <li class="list-item js-list-item">
+                        <div class="border border-top-1"></div>
+                        <div class="border-hover border-hover-top-1"></div>
+                        <div class="border border-top-2"></div>
+                        <div class="border-hover border-hover-top-2"></div>
+                        <div class="border border-right"></div>
+                        <div class="border-hover border-hover-right"></div>
+                        <div class="border border-bottom"></div>
+                        <div class="border-hover border-hover-bottom"></div>
+                        <div class="border border-left"></div>
+                        <div class="border-hover border-hover-left"></div>
+                        <span class="legend">01</span>
+                        <span class="middle"></span>
+                        <div class="vm inline desc-info">
+                            <h1 class="desc-title">海量IP池</h1>
+                            <div class="desc-text">
+                                <p>千万级独立IP，支持</p>
+                                <p>单日千万次使用</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-item js-list-item">
+                        <div class="border border-top-1"></div>
+                        <div class="border-hover border-hover-top-1"></div>
+                        <div class="border border-top-2"></div>
+                        <div class="border-hover border-hover-top-2"></div>
+                        <div class="border border-right"></div>
+                        <div class="border-hover border-hover-right"></div>
+                        <div class="border border-bottom"></div>
+                        <div class="border-hover border-hover-bottom"></div>
+                        <div class="border border-left"></div>
+                        <div class="border-hover border-hover-left"></div>
+                        <span class="legend">02</span>
+                        <span class="middle"></span>
+                        <div class="vm inline desc-info">
+                            <h1 class="desc-title">免费试用</h1>
+                            <div class="desc-text">
+                                <p>新用户首次注册即送</p>
+                                <p>30分钟免费时长</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-item js-list-item">
+                        <div class="border border-top-1"></div>
+                        <div class="border-hover border-hover-top-1"></div>
+                        <div class="border border-top-2"></div>
+                        <div class="border-hover border-hover-top-2"></div>
+                        <div class="border border-right"></div>
+                        <div class="border-hover border-hover-right"></div>
+                        <div class="border border-bottom"></div>
+                        <div class="border-hover border-hover-bottom"></div>
+                        <div class="border border-left"></div>
+                        <div class="border-hover border-hover-left"></div>
+                        <span class="legend">03</span>
+                        <span class="middle"></span>
+                        <div class="vm inline desc-info">
+                            <h1 class="desc-title">切换快</h1>
+                            <div class="desc-text">
+                                <p>自建机房，保证用户</p>
+                                <p>独享4-8M带宽</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-item js-list-item">
+                        <div class="border border-top-1"></div>
+                        <div class="border-hover border-hover-top-1"></div>
+                        <div class="border border-top-2"></div>
+                        <div class="border-hover border-hover-top-2"></div>
+                        <div class="border border-right"></div>
+                        <div class="border-hover border-hover-right"></div>
+                        <div class="border border-bottom"></div>
+                        <div class="border-hover border-hover-bottom"></div>
+                        <div class="border border-left"></div>
+                        <div class="border-hover border-hover-left"></div>
+                        <span class="legend">04</span>
+                        <span class="middle"></span>
+                        <div class="vm inline desc-info">
+                            <h1 class="desc-title">隐藏访问IP</h1>
+                            <div class="desc-text">
+                                <p>使用代理服务器，隐</p>
+                                <p>藏用户真实IP地址</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="advantage-list clearfix">
+                    <li class="list-item js-list-item">
+                        <div class="border border-top-1"></div>
+                        <div class="border-hover border-hover-top-1"></div>
+                        <div class="border border-top-2"></div>
+                        <div class="border-hover border-hover-top-2"></div>
+                        <div class="border border-right"></div>
+                        <div class="border-hover border-hover-right"></div>
+                        <div class="border border-bottom"></div>
+                        <div class="border-hover border-hover-bottom"></div>
+                        <div class="border border-left"></div>
+                        <div class="border-hover border-hover-left"></div>
+                        <span class="legend">05</span>
+                        <span class="middle"></span>
+                        <div class="vm inline desc-info">
+                            <h1 class="desc-title">计费灵活</h1>
+                            <div class="desc-text">
+                                <p>各类套餐满足需求，</p>
+                                <p>支持定制化需求</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-item js-list-item">
+                        <div class="border border-top-1"></div>
+                        <div class="border-hover border-hover-top-1"></div>
+                        <div class="border border-top-2"></div>
+                        <div class="border-hover border-hover-top-2"></div>
+                        <div class="border border-right"></div>
+                        <div class="border-hover border-hover-right"></div>
+                        <div class="border border-bottom"></div>
+                        <div class="border-hover border-hover-bottom"></div>
+                        <div class="border border-left"></div>
+                        <div class="border-hover border-hover-left"></div>
+                        <span class="legend">06</span>
+                        <span class="middle"></span>
+                        <div class="vm inline desc-info">
+                            <h1 class="desc-title">高并发</h1>
+                            <div class="desc-text">
+                                <p>并发可达数万级，海</p>
+                                <p>量吞吐</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-item js-list-item">
+                        <div class="border border-top-1"></div>
+                        <div class="border-hover border-hover-top-1"></div>
+                        <div class="border border-top-2"></div>
+                        <div class="border-hover border-hover-top-2"></div>
+                        <div class="border border-right"></div>
+                        <div class="border-hover border-hover-right"></div>
+                        <div class="border border-bottom"></div>
+                        <div class="border-hover border-hover-bottom"></div>
+                        <div class="border border-left"></div>
+                        <div class="border-hover border-hover-left"></div>
+                        <span class="legend">07</span>
+                        <span class="middle"></span>
+                        <div class="vm inline desc-info">
+                            <h1 class="desc-title">IP散点分布</h1>
+                            <div class="desc-text">
+                                <p>独享真实IP资源散点</p>
+                                <p>分布，不连号</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-item js-list-item">
+                        <div class="border border-top-1"></div>
+                        <div class="border-hover border-hover-top-1"></div>
+                        <div class="border border-top-2"></div>
+                        <div class="border-hover border-hover-top-2"></div>
+                        <div class="border border-right"></div>
+                        <div class="border-hover border-hover-right"></div>
+                        <div class="border border-bottom"></div>
+                        <div class="border-hover border-hover-bottom"></div>
+                        <div class="border border-left"></div>
+                        <div class="border-hover border-hover-left"></div>
+                        <span class="legend">08</span>
+                        <span class="middle"></span>
+                        <div class="vm inline desc-info">
+                            <h1 class="desc-title">售后无忧</h1>
+                            <div class="desc-text">
+                                <p>专业团队7X24小时</p>
+                                <p>提供技术支持</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="advantage-area-3">
+            <img src="/user/img/index/client_left.jpg?v=20200803001" alt="" class="img-client-left" />
+            <img src="/user/img/index/client_right.jpg?v=20200803001" alt="" class="img-client-right" />
+            <div class="advantage-content">
+                <div class="advantage-big-title">兼容多个客户端</div>
+                <div class="client-area clearfix">
+                    <div class="client-wrap fl">
+                        <div class="client-unit">
+                            <div class="unit-title">浏览器</div>
+                            <div class="split-line"></div>
+                            <ul class="inline unit-list unit-list-1 clearfix">
+                                <li class="list-item fl"><img src="/user/img/index/icon_client_1.png?v=20200803001" alt="" class="img-icon-client img-icon-client-1" /></li>
+                                <li class="list-item list-item-2 fl"><img src="/user/img/index/icon_client_2.png?v=20200803001" alt="" class="img-icon-client img-icon-client-2" /></li>
+                                <li class="list-item list-item-3 fl"><img src="/user/img/index/icon_client_3.png?v=20200803001" alt="" class="img-icon-client img-icon-client-3" /></li>
+                            </ul>
+                        </div>
+                        <div class="client-unit">
+                            <div class="unit-title">模拟器</div>
+                            <div class="split-line"></div>
+                            <ul class="inline unit-list unit-list-2 clearfix">
+                                <li class="list-item fl"><img src="/user/img/index/icon_client_4.png?v=20200803001" alt="" class="img-icon-client img-icon-client-1" /></li>
+                                <li class="list-item fl"><img src="/user/img/index/icon_client_5.png?v=20200803001" alt="" class="img-icon-client img-icon-client-2" /></li>
+                                <li class="list-item fl"><img src="/user/img/index/icon_client_6.png?v=20200803001" alt="" class="img-icon-client img-icon-client-3" /></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="client-wrap fr">
+                        <div class="client-unit">
+                            <div class="unit-title">社交类</div>
+                            <div class="split-line"></div>
+                            <ul class="inline unit-list unit-list-3 clearfix">
+                                <li class="list-item fl"><img src="/user/img/index/icon_client_7.png?v=20200803001" alt="" class="img-icon-client img-icon-client-1" /></li>
+                                <li class="list-item fl"><img src="/user/img/index/icon_client_8.png?v=20200803001" alt="" class="img-icon-client img-icon-client-2" /></li>
+                                <li class="list-item fl"><img src="/user/img/index/icon_client_9.png?v=20200803001" alt="" class="img-icon-client img-icon-client-3" /></li>
+                            </ul>
+                        </div>
+                        <div class="client-unit">
+                            <div class="unit-title">论坛类</div>
+                            <div class="split-line"></div>
+                            <ul class="inline unit-list unit-list-4 clearfix">
+                                <li class="list-item fl"><img src="/user/img/index/icon_client_10.png?v=20200803001" alt="" class="img-icon-client img-icon-client-1" /></li>
+                                <li class="list-item list-item-2 fl"><img src="/user/img/index/icon_client_11.png?v=20200803001" alt="" class="img-icon-client img-icon-client-2" /></li>
+                                <li class="list-item list-item-3 fl"><img src="/user/img/index/icon_client_12.png?v=20200803001" alt="" class="img-icon-client img-icon-client-3" /></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="advantage-area-4">
+            <div class="advantage-content">
+                <div class="advantage-big-title">多样化应用场景</div>
+                <ul class="scene-list clearfix">
+                    <li class="list-item">
+                        <img src="/user/img/index/scene_1.jpg?v=20200803001" alt="" class="img-scene" />
+                        <img src="/user/img/index/scene_1_h.jpg?v=20200803001" alt="" class="img-scene-hover" />
+                        <span class="text">爬虫数据采集</span>
+                    </li>
+                    <li class="list-item">
+                        <img src="/user/img/index/scene_2.jpg?v=20200803001" alt="" class="img-scene" />
+                        <img src="/user/img/index/scene_2_h.jpg?v=20200803001" alt="" class="img-scene-hover" />
+                        <span class="text">效果补量 / ASO优化</span>
+                    </li>
+                    <li class="list-item">
+                        <img src="/user/img/index/scene_3.jpg?v=20200803001" alt="" class="img-scene" />
+                        <img src="/user/img/index/scene_3_h.jpg?v=20200803001" alt="" class="img-scene-hover" />
+                        <span class="text">舆情监测 / 游戏挂机</span>
+                    </li>
+                    <li class="list-item">
+                        <img src="/user/img/index/scene_4.jpg?v=20200803001" alt="" class="img-scene" />
+                        <img src="/user/img/index/scene_4_h.jpg?v=20200803001" alt="" class="img-scene-hover" />
+                        <span class="text">市场分析</span>
+                    </li>
+                    <li class="list-item">
+                        <img src="/user/img/index/scene_5.jpg?v=20200803001" alt="" class="img-scene" />
+                        <img src="/user/img/index/scene_5_h.jpg?v=20200803001" alt="" class="img-scene-hover" />
+                        <span class="text">电商采集</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="advantage-area-5">
+            <img src="/user/img/index/map_left.png?v=20200803001" alt="" class="img-map-left" />
+            <img src="/user/img/index/map_right.png?v=20200803001" alt="" class="img-map-right" />
+            <div class="advantage-content">
+                <div class="advantage-big-title">100000+代理IP每日更新</div>
+                <div class="advantage-small-title">用户人群广 / 可用代理IP量多 / 全国高级路线 / 支持电脑、手机多平台应用接入</div>
+                <div class="map-area" id="js-map-area">
+                    <div class="map-title">
+                        <span class="inline vm dot"></span>
+                        <span class="inline vm txt">已开通节点</span>
+                    </div>
+                    <img src="/user/img/index/map.jpg?v=20200804001" alt="" class="img-map" />
+                </div>
+                <ul class="advantage-list">
+                    <li class="list-item">
+                        <span class="middle"></span>
+                        <div class="inline vm">
+                            <div class="tip-txt" id="js-user-nums"></div>
+                            <div class="tip-title">用户量</div>
+                        </div>
+                    </li>
+                    <li class="list-item">
+                        <div class="border-left"></div>
+                        <span class="middle"></span>
+                        <div class="inline vm">
+                            <div class="tip-txt" id="js-use-nums"></div>
+                            <div class="tip-title">每日使用量</div>
+                        </div>
+                    </li>
+                    <li class="list-item">
+                        <div class="border-left"></div>
+                        <span class="middle"></span>
+                        <div class="inline vm">
+                            <div class="tip-txt" id="js-ip-nums"></div>
+                            <div class="tip-title">可用IP量</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="register-area">
+            <div class="register-content">
+                <div class="bg-register-wrap">
+                    <img src="/user/img/index/icon_hand.png?v=20200804001" alt="" class="img-icon-hand" />
+                    <a href="javascript:;" class="btn-register js-pop-register-panel" title="立即注册">
+                        <span class="cover layer"></span>
+                        <span class="text">立即注册</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="news-area">
+            <div class="news-content">
+                <div class="news-big-title">
+                    <span class="text-1">聚焦土豆IP</span>
+                    <a href="/help" class="btn-more">
+                        <span class="vm text">查看更多</span>
+                        <span class="vm inline icon-more-wrap"></span>
+                    </a>
+                </div>
+                <div class="split-line"></div>
+                <ul class="news-type-list clearfix">
+                    <li class="type-list-item">
+                        <h1 class="news-type-title">产品介绍</h1>
+                        <div class="news-type-split-line"></div>
+                        <ul class="news-list">
+                            <li class="list-item clearfix"><a href="/product/web/product_1.html" class="link" title="【土豆IP】安卓端下载教程">【土豆IP】安卓端下载教程</a><span class="date">04.10</span></li>
+                            <li class="list-item clearfix"><a href="/product/web/product_2.html" class="link" title="【土豆IP】安卓端切换IP教程">【土豆IP】安卓端切换IP教程</a><span class="date">04.10</span></li>
+                            <li class="list-item clearfix"><a href="/product/web/product_3.html" class="link" title="【土豆IP】电脑端下载教程">【土豆IP】电脑端下载教程</a><span class="date">04.11</span></li>
+                            <li class="list-item clearfix"><a href="/product/web/product_4.html" class="link" title="【土豆IP】电脑端自动切换IP教程">【土豆IP】电脑端自动切换IP教程</a><span class="date">04.11</span></li>
+                            <li class="list-item clearfix"><a href="/product/web/product_5.html" class="link" title="【土豆IP】安卓端如何进行充值？">【土豆IP】安卓端如何进行充值？</a><span class="date">04.12</span></li>
+                            <li class="list-item clearfix"><a href="/product/web/product_6.html" class="link" title="【土豆IP】电脑端如何进行充值？">【土豆IP】电脑端如何进行充值？</a><span class="date">04.12</span></li>
+                            <li class="list-item clearfix"><a href="/product/web/product_7.html" class="link" title="【土豆IP】安卓端如何进行续费？">【土豆IP】安卓端如何进行续费？</a><span class="date">04.13</span></li>
+                            <li class="list-item clearfix"><a href="/product/web/product_8.html" class="link" title="【土豆IP】电脑端如何进行续费？">【土豆IP】电脑端如何进行续费？</a><span class="date">04.13</span></li>
+                            <li class="list-item clearfix"><a href="/product/web/product_9.html" class="link" title="【土豆IP】怎么同时购买多个套餐？">【土豆IP】怎么同时购买多个套餐？</a><span class="date">04.14</span></li>
+                            <li class="list-item clearfix"><a href="/product/web/product_10.html" class="link" title="【土豆IP】怎么同时购买多个终端">【土豆IP】怎么同时购买多个终端</a><span class="date">04.14</span></li>
+                        </ul>
+                    </li>
+                    <li class="type-list-item">
+                        <h1 class="news-type-title">常见问题</h1>
+                        <div class="news-type-split-line"></div>
+                        <div class="split-line-left"></div>
+                        <ul class="news-list">
+                            <li class="list-item clearfix"><a href="/question/web/question_10.html" class="link" title="虚拟IP是什么">虚拟IP是什么</a><span class="date">05.19</span></li>
+                            <li class="list-item clearfix"><a href="/question/web/question_9.html" class="link" title="代理IP客户端如何自动切换IP">代理IP客户端如何自动切换IP</a><span class="date">05.18</span></li>
+                            <li class="list-item clearfix"><a href="/question/web/question_8.html" class="link" title="HTTP代理和IP代理有什么区别">HTTP代理和IP代理有什么区别</a><span class="date">05.17</span></li>
+                            <li class="list-item clearfix"><a href="/question/web/question_7.html" class="link" title="爬虫采集如何提高采集效率">爬虫采集如何提高采集效率</a><span class="date">05.16</span></li>
+                            <li class="list-item clearfix"><a href="/question/web/question_6.html" class="link" title="代理IP有哪些不同的作用">代理IP有哪些不同的作用</a><span class="date">05.15</span></li>
+                            <li class="list-item clearfix"><a href="/question/web/question_5.html" class="link" title="土豆IP可以访问境外封锁网站吗？">土豆IP可以访问境外封锁网站吗？</a><span class="date">04.14</span></li>
+                            <li class="list-item clearfix"><a href="/question/web/question_4.html" class="link" title="静态IP和动态IP有什么区别？">静态IP和动态IP有什么区别？</a><span class="date">04.13</span></li>
+                            <li class="list-item clearfix"><a href="/question/web/question_3.html" class="link" title="土豆IP可以测试效果再使用吗？">土豆IP可以测试效果再使用吗？</a><span class="date">04.12</span></li>
+                            <li class="list-item clearfix"><a href="/question/web/question_2.html" class="link" title="土豆IP可以应用于用于哪些场景？">土豆IP可以应用于用于哪些场景？</a><span class="date">04.11</span></li>
+                            <li class="list-item clearfix"><a href="/question/web/question_1.html" class="link" title="土豆IP的作用是什么？">土豆IP的作用是什么？</a><span class="date">04.10</span></li>
+                        </ul>
+                    </li>
+                    <li class="type-list-item">
+                        <h1 class="news-type-title">最新资讯</h1>
+                        <div class="news-type-split-line"></div>
+                        <div class="split-line-left"></div>
+                        <ul class="news-list">
+                            <li class="list-item clearfix"><a href="/news/web/news_60.html" class="link" title="代理IP哪个比较好">代理IP哪个比较好</a><span class="date">07.24</span></li>
+                            <li class="list-item clearfix"><a href="/news/web/news_59.html" class="link" title="手机如何修改IP">手机如何修改IP</a><span class="date">07.22</span></li>
+                            <li class="list-item clearfix"><a href="/news/web/news_58.html" class="link" title="如何修改自己的电脑IP地址">如何修改自己的电脑IP地址</a><span class="date">07.21</span></li>
+                            <li class="list-item clearfix"><a href="/news/web/news_57.html" class="link" title="优质代理IP购买渠道">优质代理IP购买渠道</a><span class="date">07.20</span></li>
+                            <li class="list-item clearfix"><a href="/news/web/news_56.html" class="link" title="换IP软件哪个好用">换IP软件哪个好用</a><span class="date">07.17</span></li>
+                            <li class="list-item clearfix"><a href="/news/web/news_55.html" class="link" title="使用代理IP有什么好处">使用代理IP有什么好处</a><span class="date">07.16</span></li>
+                            <li class="list-item clearfix"><a href="/news/web/news_54.html" class="link" title="改IP的软件哪个好用">改IP的软件哪个好用</a><span class="date">07.15</span></li>
+                            <li class="list-item clearfix"><a href="/news/web/news_53.html" class="link" title="使用代理IP软件应该注意哪些问题">使用代理IP软件应该注意哪些问题</a><span class="date">07.14</span></li>
+                            <li class="list-item clearfix"><a href="/news/web/news_52.html" class="link" title="代理IP和HTTP代理的区别有什么">代理IP和HTTP代理的区别有什么</a><span class="date">07.13</span></li>
+                            <li class="list-item clearfix"><a href="/news/web/news_51.html" class="link" title="更换IP可以刷单吗">更换IP可以刷单吗</a><span class="date">07.10</span></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+<div class="footer">
+    <div class="footer-con-area">
+        <div class="footer-con clearfix">
+            <div class="left-side">
+                <div class="desc-info clearfix">
+                    <div class="desc-title">联系我们</div>
+                    <span class="split-line"></span>
+                    <div class="desc-item">
+                        <span class="text">QQ：3008020499</span><span class="text">3008020498</span>
+                        <span class="text">服务热线：17380156913</span><span class="text">19181981276</span>
+                    </div>
+                </div>
+                <div class="desc-info clearfix">
+                    <div class="desc-title">关于我们</div>
+                    <span class="split-line"></span>
+                    <div class="desc-item">
+                        <p>公司地址：中国（四川）自由贸易试验区成都高新区天府大道北段1700号1栋2单元9层907号</p>
+                    </div>
+                </div>
+                <div class="disclaimer">
+                    <span class="vm text">土豆IP是知名的</span>
+                    <a href="/" title="动态IP" class="vm link">动态IP</a>
+                    <span class="vm text">代理服务商，提供</span>
+                    <a href="/" title="代理IP软件" class="vm link">代理IP软件</a>
+                    <span class="vm text">，一键切换IP，高效实用，自动过滤重复。</span>
+                </div>
+                <div class="copyright">
+                    <span class="vm title">备案信息</span>
+                    <a href="http://www.beian.miit.gov.cn" target="_blank" class="vm text link">蜀ICP备20002308号-2 © 版权所有成都思诚智源信息系统有限公司</a>
+                    <span class="inline vt split-line"></span>
+                    <span class="vm text">增值电信业务经营许可证 B1-20201300</span>
+                    <span class="inline vt split-line"></span>
+                    <a href="/user/privacy-protocol.html" target="_blank" class="vm text link" title="隐私权政策">隐私权政策</a>
+                </div>
+            </div>
+            <div class="qrcode-area tc vh">
+                <img src="" alt="" class="img-qrcode" />
+                <p class="tip">扫码添加客服微信</p>
+            </div>
+            <img src="/user/img/footer/logo.png?v=20200804001" alt="" class="img-logo" />
+        </div>
+    </div>
+</div>
+
+    
+    
+    
+    
+    <div class="cover pf pop-area js-pop-area hide" id="js-pop-area-user">
+        <div class="cover mask-layer"></div>
+        
+        <div class="pop-box pop-user pop-login js-pop-user" id="js-pop-login">
+            <div class="right-side">
+                <div class="pop-header"><a href="javascript:;" class="inline link active">登录</a><a href="javascript:;" class="inline link" id="js-register-now">注册</a></div>
+                <a href="javascript:;" class="pop-close js-pop-close" title="关闭"></a>
+                <div class="form-wrap">
+                    <div class="form-item">
+                        
+                        <input type="text" class="input-txt js-input-txt js-login-input-txt" placeholder="请输入用户名或手机号" id="js-login-user-name" />
+                    </div>
+                    <div class="form-item">
+                        
+                        <input type="password" class="input-txt js-input-txt js-login-input-txt" placeholder="请输入密码" id="js-login-user-pwd" autocomplete="new-password" />
+                    </div>
+                </div>
+                <div class="error-tip js-error-tip vh" id="js-login-error-tip">用户名不能为空</div>
+                <div class="btn-login" id="js-btn-login">登录</div>
+                <div class="forgot-pwd-wrap"><a href="javascript:;" class="forgot-pwd" id="js-forgot-pwd">忘记密码？</a></div>
+            </div>
+        </div>
+        
+        <div class="pop-box pop-user pop-register js-pop-user" id="js-pop-register">
+            <div class="right-side">
+                <div class="pop-header"><a href="javascript:;" class="inline link" id="js-return-login">登录</a><a href="javascript:;" class="inline link active">注册</a></div>
+                <a href="javascript:;" class="pop-close js-pop-close" title="关闭"></a>
+                <div class="form-wrap">
+                    <div class="form-item">
+                        <input type="text" class="input-txt js-input-txt js-register-input-txt" placeholder="请输入英文、数字组成的用户名（至少6位）" id="js-register-user-name" autocomplete="off" />
+                    </div>
+                    <div class="form-item">
+                        <input type="text" class="input-txt js-input-txt js-register-input-txt" placeholder="请输入手机号码" id="js-register-user-phone" autocomplete="off" />
+                    </div>
+                    <div class="form-item">
+                        <input type="password" class="input-txt js-input-txt js-register-input-txt" placeholder="请设置密码（至少6位）" id="js-register-user-pwd" />
+                    </div>
+                    <div class="form-item">
+                        <input type="password" class="input-txt js-input-txt js-register-input-txt" placeholder="请确认密码" id="js-register-repeat-pwd" />
+                    </div>
+                    <div class="form-item form-item-img-code">
+                        <input type="text" class="input-txt js-input-txt js-register-input-txt" placeholder="请输入右侧验证码" id="js-register-img-code" />
+                        <img src="/img/captcha.jpg?width=86&height=44" alt="" class="img-code" id="js-register-captcha-code">
+                    </div>
+                    <div class="form-item form-item-sms-code">
+                        <input type="text" class="input-txt js-input-txt js-register-input-txt" placeholder="请输入短信验证码" id="js-register-sms-code" />
+                        <a href="javascript:;" class="sms-code" id="js-register-get-sms-code">获取验证码</a>
+                    </div>
+                </div>
+                <div class="register-tip"><a href="javascript:;" class="vm inline check" id="js-check-protocol"></a><span class="vm txt">我已仔细阅读并接受</span><a href="/user/protocol.html" class="vm link" target="_blank">《用户注册协议》</a></div>
+                <div class="error-tip js-error-tip vh" id="js-register-error-tip">用户名不能为空</div>
+                <div class="btn-register disabled" id="js-btn-register">确定</div>
+            </div>
+        </div>
+        
+        <div class="pop-box pop-user pop-forgot js-pop-user" id="js-pop-forgot">
+            <div class="right-side">
+                <div class="pop-header">
+                    <div class="pop-header-title">忘记密码</div>
+                    <span class="line"></span>
+                </div>
+                <a href="javascript:;" class="pop-close js-pop-close" title="关闭"></a>
+                <div class="form-wrap">
+                    <div class="form-item">
+                        <input type="text" class="input-txt js-input-txt js-forgot-input-txt" placeholder="请输入注册手机号码" id="js-forgot-user-phone" autocomplete="off" />
+                    </div>
+                    <div class="form-item form-item-img-code">
+                        <input type="text" class="input-txt js-input-txt js-forgot-input-txt" placeholder="请输入图形验证码" id="js-forgot-img-code" />
+                        <img src="/img/captcha.jpg?width=86&height=44" alt="" class="img-code" id="js-forgot-captcha-code">
+                    </div>
+                    <div class="form-item form-item-sms-code">
+                        <input type="text" class="input-txt js-input-txt js-forgot-input-txt" placeholder="请输入短信验证码" id="js-forgot-sms-code" />
+                        <a href="javascript:;" class="sms-code" id="js-forgot-get-sms-code">获取验证码</a>
+                    </div>
+                    <div class="form-item">
+                        <input type="password" class="input-txt js-input-txt js-forgot-input-txt" placeholder="请输入6-20位密码" id="js-forgot-user-pwd" />
+                    </div>
+                    <div class="form-item">
+                        <input type="password" class="input-txt js-input-txt js-forgot-input-txt" placeholder="请再次输入密码" id="js-forgot-repeat-pwd" />
+                    </div>
+                </div>
+                <div class="error-tip js-error-tip vh" id="js-forgot-error-tip">手机号不能为空</div>
+                <div class="btn-forgot" id="js-btn-forgot">确定</div>
+            </div>
+        </div>
+    </div>
+
+    
+    
+<div class="pop-box pop-service" id="js-pop-service">
+    <div class="pop-header">
+        <span class="txt">欢迎使用土豆IP</span>
+        <a href="javascript:;" class="close js-close-pop-service"></a>
+        <div class="split-line"></div>
+    </div>
+    <div class="pop-service-con">
+        <div class="kefu-area clearfix">
+            <img src="/user/img/popbox/kefu_qq.png?v=20200410001" alt="" class="fl img-qq" />
+            <div class="fl desc-area">
+                <p class="tip-1">立即注册，免费试用</p>
+                <p class="tip-2">工作时间：9:00-23:00</p>
+            </div>
+        </div>
+        <div class="btn-area clearfix">
+            <a href="/download" class="fl btn btn-yes">立即试用</a>
+            <a target="_blank" href="https://url.cn/5Ejz9ae?_type=wpa&qidian=true" class="fr btn btn-no">联系客服</a>
+        </div>
+    </div>
+</div>
+
+    
+    
+<div class="float-contact" id="js-float-contact">
+    <img src="/user/img/popbox/kefu_icon_tip.png?v=20200410001" alt="" class="img-icon-tip" />
+    <div class="txt-wrap">
+        <p>在</p>
+        <p>线</p>
+        <p>咨</p>
+        <p>询</p>
+    </div>
+    
+    <div class="left-content hide" id="js-left-content">
+        <a href="javascript:;" class="close" id="js-close-float"></a>
+        <ul class="kefu-list">
+            <li class="list-item">
+                <a target="_blank" href="https://url.cn/5Ejz9ae?_type=wpa&qidian=true" class="link clearfix">
+                    <img src="/user/img/popbox/kefu_icon_1.png?v=20200410001" alt="" class="fl img-icon" />
+                    <div class="desc-area">
+                        <p class="tip-1">售前客服</p>
+                        <p class="tip-2">在线客服，实时响应</p>
+                    </div>
+                </a>
+            </li>
+            <li class="list-item">
+                <a target="_blank" href="https://url.cn/5Ejz9ae?_type=wpa&qidian=true" class="link clearfix">
+                    <img src="/user/img/popbox/kefu_icon_2.png?v=20200410001" alt="" class="fl img-icon" />
+                    <div class="desc-area">
+                        <p class="tip-1">售后客服</p>
+                        <p class="tip-2">在线客服，实时响应</p>
+                    </div>
+                </a>
+            </li>
+            <li class="list-item">
+                <a target="_blank" href="https://url.cn/5Ejz9ae?_type=wpa&qidian=true" class="link clearfix">
+                    <img src="/user/img/popbox/kefu_icon_3.png?v=20200410001" alt="" class="fl img-icon" />
+                    <div class="desc-area">
+                        <p class="tip-1">大客户经理</p>
+                        <p class="tip-2 color-1">17380156913</p>
+                        <p class="tip-2 color-1">19181981276</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <ul class="qrcode-list hide">
+            <li class="inline list-item">
+                <img src="/user/img/popbox/kefu_qrcode_public.png?v=20200410001" alt="" class="img-qrcode" />
+                <p class="tip">IPKU公众号</p>
+            </li>
+            <li class="inline list-item">
+                <img src="/user/img/popbox/kefu_qrcode_wechat.png?v=20200410001" alt="" class="img-qrcode" />
+                <p class="tip">微信客服</p>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<script id="qd28521578090095a54513c2e54f1c6b261dd3b7db86" src="https://wp.qiye.qq.com/qidian/2852157809/0095a54513c2e54f1c6b261dd3b7db86" charset="utf-8" async defer></script>
+
+
+    
+    
+    
+    
+    <script src="/user/js/common/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="/user/js/common/utils.js?v=20200804001"></script>
+    <script type="text/javascript">
+        ;(function($) {
+            if (!$.supportCss3("animation")) {
+                $("html").addClass("no-animation");
+            }
+        })(jQuery);
+    </script>
+    <script src="/user/js/index/css3_animate.js?v=20200804001"></script>
+    <script src="/user/js/common/countUp.js"></script>
+    <script src="/user/js/index/index.js?v=20200804001"></script>
+    <script src="/user/js/index/particle_emission.js?v=20200804001"></script>
+    
+<script src="/user/js/pop/pop_user.js?v=20200727001"></script>
+
+    
+<script src="/user/js/pop/pop_service.js?v=20200426002"></script>
+
+    
+<script src="/user/js/common/hm.js?v=20200422001"></script>
+<script src="/user/js/common/360-statistics.js?v=20200422001"></script>
+
+</body>
+</html>

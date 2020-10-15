@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block t1 %}
+{% endblock %}
+{% block name %}
+    <h1 style="margin-left: 500px;color: #0f0f0f;margin-top: 20px"> 添加餐馆 </h1>
+{% endblock %}
+{% block con %}
+    <style>
+        .btn-success {
+            margin-top: 10px;
+        }
+
+        .container {
+            margin-top: 15px;
+            margin-left: 1px;
+        }
+    </style>
+    <script>
+
+    </script>
+    <div class="container" style="margin-left: -190px">
+        <div class="row">
+            <div class="col-md-5 col-md-offset-3">
+                <form action="" method="post">
+                    {% csrf_token %}
+                    <div style="margin-top: 15px">
+                        <label for="">餐馆名称</label>
+                        <input type="text" class="form-control" name="name">
+                    </div>
+                    <div style="margin-top: 15px">
+                        <label for="">店面地址</label>
+                        <input type="text" class="form-control" name="city">
+                    </div>
+                    <div style="margin-top: 15px">
+                        <label for="">联系邮箱</label>
+                        <input type="text" class="form-control" name="email">
+                    </div>
+
+                    <input type="submit" class="bth btn-success" style="margin-top: 10px">
+                </form>
+            </div>
+        </div>
+
+    </div>
+{% endblock %}

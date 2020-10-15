@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block name %}
+    <h1 style="margin-left: 500px;color: #0f0f0f"> 所有书籍 </h1>
+{% endblock %}
+{% block con %}
+    <style>
+        .btn-success {
+            margin-top: 10px;
+        }
+
+        .container {
+            margin-top: 15px;
+            margin-left: 1px;
+        }
+    </style>
+    <div class="container" style="margin-left: -200px">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-3">
+                <table class="table table-striped table-bordered">
+                    <thead>
+                    <tr>
+                        <td style="background-color: #c7ddef"> 出版社名称</td>
+                        <td style="background-color: #b2dba1">出版书籍</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td >{{ pub_obj.name }}</td>
+                            <td>
+                            {% for book in book_list %}
+                               {{ book.title }};
+                            {% endfor %}
+                             </td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+
+    </div>
+{% endblock %}

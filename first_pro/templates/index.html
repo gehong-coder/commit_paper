@@ -1,0 +1,28 @@
+{% extends 'Base.html' %}
+
+{% block title %}
+
+<title> index </title>
+{% endblock %}
+
+{% block con %}
+    <p>
+        直接进行转换，用点。
+        {{ name }}
+    </p>
+    {{ i }}
+    循环的使用
+    使用if进行状态的使用和判断简单
+    {% if user %}
+        <p><a> hi </a></p>
+    {% endif %}
+
+    自定义过滤器--有引用变量-
+    引入
+    {% load my_fiter %}
+    {{ s|mutifiter:20 }}
+    <p>
+        自定义标签
+        {% mutitag 2 7 %}
+    </p>
+{% endblock %}
